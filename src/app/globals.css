@@ -117,8 +117,12 @@ body {
       transparent 100%
     );
     scroll-behavior: smooth;
-    scroll-snap-type: x proximity;
+    scroll-snap-type: x mandatory;
     scrollbar-width: none;
+  }
+
+  .entree-carousel [data-entree-card] {
+    scroll-snap-stop: always;
   }
 
   .entree-carousel-track {
