@@ -65,7 +65,7 @@ const audioCues: AudioCue[] = [
     start: 228.34,
     end: 252.16,
     label: "BlaBlaAHA!",
-    target: "BlaBlaAHA! Learn Spanish",
+    target: "BlaBlaAHA!",
   },
   {
     start: 252.16,

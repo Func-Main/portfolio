@@ -21,7 +21,7 @@ import { cn } from "@/lib/utils";
 
 const projects = [
   {
-    title: "BlaBlaAHA! Learn Spanish",
+    title: "BlaBlaAHA!",
     description:
       "An audio-first language app for Spanish, Italian, and German, built around short listening sessions that train real-world confidence.",
     href: "https://apps.apple.com/gb/app/blablaaha-learn-spanish/id6755297500",
@@ -34,7 +34,7 @@ const projects = [
   {
     title: "Happy Floor",
     description:
-      "A pelvic-health app with audio-guided exercises, video tutorials, daily goals, and progression plans for building a consistent practice.",
+      "A pelvic health app with audio-guided exercises, video tutorials, daily goals, and progression plans for building a consistent practice.",
     href: "https://www.happyfloorapp.com",
     tags: ["iOS", "Full-stack", "Product", "Design"],
     visualStyle: {
@@ -205,11 +205,11 @@ export default function Home() {
   return (
     <main className="min-h-screen pb-32">
       <AudioGuide />
-      <header className="relative mx-auto flex h-16 max-w-6xl items-center justify-center px-5">
+      <header className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
         <a className="font-mono text-sm font-normal uppercase" href="#">
           Daniel Morgan
         </a>
-        <div className="absolute right-5 top-1/2 -translate-y-1/2">
+        <div>
           <ThemeToggle />
         </div>
       </header>
@@ -244,6 +244,14 @@ export default function Home() {
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <AudioGuidePlayButton />
+            <a
+              className={buttonVariants({ variant: "outline" })}
+              href="/CV"
+              rel="noreferrer"
+              target="_blank"
+            >
+              CV
+            </a>
             <a
               aria-label="Email"
               className={buttonVariants({ variant: "outline", size: "icon" })}
@@ -440,6 +448,14 @@ export default function Home() {
       >
         <div className="mx-auto flex max-w-6xl justify-end px-5 py-8">
           <div className="flex gap-2">
+            <a
+              className={buttonVariants({ variant: "secondary", size: "sm" })}
+              href="/CV"
+              rel="noreferrer"
+              target="_blank"
+            >
+              CV
+            </a>
             <a
               className={buttonVariants({ variant: "secondary", size: "icon" })}
               href="mailto:danmorgz@googlemail.com"
