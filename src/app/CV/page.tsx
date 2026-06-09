@@ -42,26 +42,26 @@ const experience = [
     company: "Func Main",
     dates: "June 2016 - Present",
     body: [
-      "My independent product studio, where I've launched, grown, and sold my own apps, alongside selected client work.",
+      "Independent product studio where I've launched, grown, and sold my own apps, alongside selected client work.",
     ],
     selectedWork: [
       {
         title: "BlaBlaAHA!",
         href: "https://apps.apple.com/gb/app/blablaaha-learn-spanish/id6755297500",
         description:
-          "an AI-native, audio-first language app built around short listening sessions and conversational confidence.",
+          "AI-native, audio-first language app built around short listening sessions and conversational confidence.",
       },
       {
         title: "Happy Floor",
         href: "https://www.happyfloorapp.com",
         description:
-          "a pelvic health app with audio-guided exercises, video tutorials, daily goals, and progression plans.",
+          "Pelvic health app with audio-guided exercises, video tutorials, daily goals, and progression plans.",
       },
       {
         title: "Looselips",
         href: "https://apps.apple.com/gb/app/looselips/id1578749536",
         description:
-          "a conversation app with 1000+ prompts for dating, relationships, friends, and family.",
+          "Conversation app with 1000+ prompts for dating, relationships, friends, and family.",
       },
       {
         title: "Bend.com",
@@ -73,7 +73,7 @@ const experience = [
         title: "ElevenLabs Hacks",
         href: "https://www.instagram.com/reel/DYBAKTMIMBD/?igsh=MWozM3o3bXY0NGtmeg==",
         description:
-          "competed in 3 ElevenLabs Hacks and won Gold in the Vercel challenge.",
+          "Competed in 3 ElevenLabs Hacks and won Gold in the Vercel challenge.",
       },
     ],
   },
@@ -82,19 +82,18 @@ const experience = [
     company: "Active in Time Ltd",
     dates: "July 2012 - Present",
     body: [
-      "Founded a health and leisure technology company that grew from a one-person shop to five full-time employees. Our first app, Splashpath, became Apple's No. 1 Health & Fitness app in the UK, before relaunching globally as Speedo Fit through an exclusive four-year partnership with Speedo.",
-      "The company continues to operate profitably, though I am no longer involved day to day.",
+      "Founded a health and leisure technology company that grew from a one-person shop to five full-time employees. Splashpath became Apple's No. 1 Health & Fitness app in the UK, then relaunched globally as Speedo Fit through an exclusive four-year partnership with Speedo. The company continues to operate profitably, though I am no longer involved day to day.",
     ],
     selectedWork: [
       {
         title: "Active in Time",
         description:
-          "a profitable SaaS platform helping UK leisure operators manage pool timetables and programme changes.",
+          "Profitable SaaS platform helping UK leisure operators manage pool timetables and programme changes.",
       },
       {
         title: "Speedo Fit",
         description:
-          "a global swim training and tracking app created through an exclusive partnership with Speedo.",
+          "Global swim training and tracking app created through an exclusive partnership with Speedo.",
       },
     ],
   },
@@ -111,7 +110,7 @@ const experience = [
     company: "Pentland Brands",
     dates: "March 2018 - September 2019",
     body: [
-      "Helped the Innovation Team rapidly design and build web and mobile prototypes for global brands including Lacoste, Speedo, and Berghaus.",
+      "Rapidly designed and built web/mobile prototypes for global brands including Lacoste, Speedo, and Berghaus.",
     ],
   },
   {
@@ -119,7 +118,7 @@ const experience = [
     company: "Beeline",
     dates: "May 2016 - January 2017",
     body: [
-      "Worked with the founders of a bicycle-tech startup to plan, design, and build the first version of the Beeline app after a successful Kickstarter campaign.",
+      "Worked with the founders to plan, design, and build the first version of the Beeline app after a successful Kickstarter campaign.",
     ],
   },
   {
@@ -177,7 +176,7 @@ function WorkLink({
   return (
     <li>
       {titleContent}
-      <span className="text-muted-foreground">, {description}</span>
+      <span className="text-muted-foreground"> - {description}</span>
     </li>
   );
 }
@@ -213,9 +212,9 @@ export default function CVPage() {
             <p className="mt-5 max-w-3xl text-lg leading-8 text-muted-foreground">
               Product designer, founder, and engineer with 15+ years building
               apps, creative technology, and full-stack software. Recently
-              I&apos;ve been focused on AI-native and audio-first products, and
-              on using AI to make better work faster. I am a scrappy mix of
-              product, engineering, and design, optimistic and easy to work with.
+              focused on AI-native and audio-first products, and on using AI to
+              make better work faster. I am a scrappy mix of product,
+              engineering, and design, optimistic and easy to work with.
             </p>
           </div>
 
