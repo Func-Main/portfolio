@@ -325,14 +325,14 @@ export default function Home() {
               const card = (
                 <Card
                   className={cn(
-                    "audio-guide-card grid min-h-44 grid-cols-[1fr_2fr] overflow-hidden p-0 transition duration-200 ease-out group-hover:-translate-y-0.5 group-hover:border-foreground/20 group-hover:shadow-md",
+                    "audio-guide-card grid overflow-hidden p-0 transition duration-200 ease-out sm:min-h-44 sm:grid-cols-[1fr_2fr] group-hover:-translate-y-0.5 group-hover:border-foreground/20 group-hover:shadow-md",
                     hasHref ? "cursor-pointer" : null,
                   )}
                 >
-                  <div className="overflow-hidden">
+                  <div className="aspect-[16/10] overflow-hidden sm:aspect-auto">
                     <div
                       aria-hidden="true"
-                      className="audio-guide-visual h-full min-h-44 w-full bg-cover bg-center transition duration-500 ease-out group-hover:scale-[1.04]"
+                      className="audio-guide-visual h-full w-full bg-cover bg-center transition duration-500 ease-out sm:min-h-44 group-hover:scale-[1.04]"
                       style={project.visualStyle}
                     />
                   </div>
