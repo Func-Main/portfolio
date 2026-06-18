@@ -452,7 +452,7 @@ export function AudioGuidePlayButton() {
 }
 
 export function AudioGuideCueButton({
-  label = "Listen",
+  label = "Listen to Dan's explanation",
   target,
 }: {
   label?: string;
@@ -476,7 +476,7 @@ export function AudioGuideCueButton({
 
   return (
     <button
-      aria-label={`Listen to audio tour from ${target}`}
+      aria-label={`Listen to Dan's explanation of ${target}`}
       className={buttonVariants({
         variant: "ghost",
         size: "sm",
@@ -484,7 +484,7 @@ export function AudioGuideCueButton({
           "ml-1 h-7 gap-1.5 rounded-none border-l px-2 pl-3 font-mono text-[0.65rem] uppercase text-muted-foreground hover:text-foreground [&_svg]:size-3.5",
       })}
       onClick={playFromCue}
-      title={`Listen to audio tour from ${target}`}
+      title={`Listen to Dan's explanation of ${target}`}
       type="button"
     >
       <CirclePlay aria-hidden="true" />
