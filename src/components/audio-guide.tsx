@@ -14,94 +14,88 @@ type AudioCue = {
 
 const audioCues: AudioCue[] = [
   {
-    start: 0.56,
-    end: 27.9,
+    start: 0,
+    end: 21.32,
     label: "Meet Dan",
     target: "intro",
   },
   {
-    start: 27.9,
-    end: 48.94,
-    label: "ElevenLabs and Stripe",
-    target: "ElevenLabs Hack X Stripe",
-  },
-  {
-    start: 48.94,
-    end: 84.98,
-    label: "ElevenLabs and Vercel",
-    target: "ElevenLabs Hack X Vercel",
-  },
-  {
-    start: 84.98,
-    end: 120.24,
-    label: "Speech Engine",
-    target: "ElevenLabs Hack X Speech Engine",
-  },
-  {
-    start: 120.24,
-    end: 133.34,
-    label: "Queer Encounters",
-    target: "Queer Encounters",
-  },
-  {
-    start: 133.34,
-    end: 162.88,
-    label: "Remotion Video Creator",
-    target: "Remotion Video Creator",
-  },
-  {
-    start: 162.88,
-    end: 184.26,
-    label: "Padel Robot Trainer",
-    target: "Padel Robot Trainer",
-  },
-  {
-    start: 184.26,
-    end: 228.34,
-    label: "Photo to Playlist",
-    target: "Photo to Playlist",
-  },
-  {
-    start: 228.34,
-    end: 252.16,
+    start: 21.32,
+    end: 45.14,
     label: "BlaBlaAHA!",
     target: "BlaBlaAHA!",
   },
   {
-    start: 252.16,
-    end: 284.7,
+    start: 45.14,
+    end: 77.68,
     label: "Happy Floor",
     target: "Happy Floor",
   },
   {
-    start: 284.7,
-    end: 309.66,
+    start: 77.68,
+    end: 102.64,
     label: "bend.com",
     target: "bend.com",
   },
   {
-    start: 309.66,
-    end: 329.64,
+    start: 102.64,
+    end: 122.62,
     label: "Looselips",
     target: "Looselips",
   },
   {
-    start: 329.64,
-    end: 356.3,
+    start: 122.62,
+    end: 149.28,
     label: "Active in Time",
     target: "Active in Time",
   },
   {
-    start: 356.3,
-    end: 388.8,
+    start: 149.28,
+    end: 181.78,
     label: "Speedo Fit",
     target: "Speedo Fit",
   },
   {
-    start: 388.8,
-    end: 402.98,
-    label: "Contact",
-    target: "contact",
+    start: 181.78,
+    end: 208.84,
+    label: "ElevenLabs and Stripe",
+    target: "ElevenLabs Hack X Stripe",
+  },
+  {
+    start: 208.84,
+    end: 244.88,
+    label: "ElevenLabs and Vercel",
+    target: "ElevenLabs Hack X Vercel",
+  },
+  {
+    start: 244.88,
+    end: 280.14,
+    label: "Speech Engine",
+    target: "ElevenLabs Hack X Speech Engine",
+  },
+  {
+    start: 280.14,
+    end: 293.24,
+    label: "Queer Encounters",
+    target: "Queer Encounters",
+  },
+  {
+    start: 293.24,
+    end: 322.78,
+    label: "Remotion Video Creator",
+    target: "Remotion Video Creator",
+  },
+  {
+    start: 322.78,
+    end: 344.16,
+    label: "Padel Robot Trainer",
+    target: "Padel Robot Trainer",
+  },
+  {
+    start: 344.16,
+    end: 384,
+    label: "Photo to Playlist",
+    target: "Photo to Playlist",
   },
 ];
 
@@ -385,7 +379,7 @@ export function AudioGuide() {
         }}
         preload="metadata"
         ref={audioRef}
-        src="/audio/audio-3.m4a"
+        src="/audio/audio-projects-first.m4a"
       />
     </aside>
   );

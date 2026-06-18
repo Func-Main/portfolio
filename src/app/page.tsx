@@ -316,11 +316,9 @@ export default function Home() {
       </div>
 
       <section id="work">
-        <EntreeCarousel entrees={experiments} />
-
         <section
           aria-labelledby="projects-heading"
-          className="mx-auto max-w-6xl px-5 pb-14"
+          className="mx-auto max-w-6xl px-5 py-14"
         >
           <div className="mb-6 flex items-center gap-2">
             <FolderKanban className="size-4 text-muted-foreground" />
@@ -403,6 +401,8 @@ export default function Home() {
             })}
           </div>
         </section>
+
+        <EntreeCarousel entrees={experiments} />
       </section>
 
       <div aria-hidden="true">
