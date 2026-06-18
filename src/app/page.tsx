@@ -14,7 +14,11 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { AudioGuide, AudioGuidePlayButton } from "@/components/audio-guide";
+import {
+  AudioGuide,
+  AudioGuideCueButton,
+  AudioGuidePlayButton,
+} from "@/components/audio-guide";
 import { EntreeCarousel } from "@/components/entree-carousel";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { cn } from "@/lib/utils";
@@ -326,6 +330,7 @@ export default function Home() {
             >
               Big Projects
             </h3>
+            <AudioGuideCueButton target="BlaBlaAHA!" />
           </div>
           <div className="grid gap-4 lg:grid-cols-2">
             {projects.map((project) => {

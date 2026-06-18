@@ -450,3 +450,45 @@ export function AudioGuidePlayButton() {
     </button>
   );
 }
+
+export function AudioGuideCueButton({
+  label = "Listen",
+  target,
+}: {
+  label?: string;
+  target: string;
+}) {
+  function playFromCue() {
+    const audio = document.querySelector<HTMLAudioElement>(
+      "[data-audio-guide-player]",
+    );
+    const cue = audioCues.find((audioCue) => audioCue.target === target);
+
+    if (!audio || !cue) {
+      return;
+    }
+
+    audio.currentTime = cue.start;
+    audio.playbackRate = defaultPlaybackRate;
+    dispatchPlaybackRate(defaultPlaybackRate);
+    void audio.play();
+  }
+
+  return (
+    <button
+      aria-label={`Listen to audio tour from ${target}`}
+      className={buttonVariants({
+        variant: "ghost",
+        size: "sm",
+        className:
+          "ml-1 h-7 gap-1.5 rounded-none border-l px-2 pl-3 font-mono text-[0.65rem] uppercase text-muted-foreground hover:text-foreground [&_svg]:size-3.5",
+      })}
+      onClick={playFromCue}
+      title={`Listen to audio tour from ${target}`}
+      type="button"
+    >
+      <CirclePlay aria-hidden="true" />
+      {label}
+    </button>
+  );
+}

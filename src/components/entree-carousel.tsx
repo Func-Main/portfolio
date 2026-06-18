@@ -11,6 +11,7 @@ import {
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { AudioGuideCueButton } from "@/components/audio-guide";
 import {
   Card,
   CardContent,
@@ -358,6 +359,7 @@ export function EntreeCarousel({ entrees }: { entrees: Entree[] }) {
           >
             Latest Work/Experiments
           </h3>
+          <AudioGuideCueButton target="ElevenLabs Hack X Stripe" />
         </div>
         <div className="flex gap-2">
           <Button
