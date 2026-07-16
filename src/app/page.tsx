@@ -236,15 +236,10 @@ export default function Home() {
             <span className="font-normal text-foreground">
               creative, engineering, and design
             </span>
-            {" "}✨. Originally from{" "}
-            <span className="font-normal text-foreground">Wales</span>, I spent
-            years in{" "}
-            <span className="font-normal text-foreground">London</span>. Now my
-            partner and I live in{" "}
-            <span className="font-normal text-foreground">
-              Torremolinos, Spain
-            </span>
-            {" "}🇪🇸, trying to learn Spanish (Spoiler: it&apos;s bloody hard).
+            {" "}✨. Available to work in the{" "}
+            <span className="font-normal text-foreground">UK</span>,{" "}
+            <span className="font-normal text-foreground">Spain</span>, or{" "}
+            <span className="font-normal text-foreground">remotely</span>.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <AudioGuidePlayButton />
