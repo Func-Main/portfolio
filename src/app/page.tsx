@@ -92,17 +92,6 @@ const projects = [
 
 const experiments = [
   {
-    title: "ElevenLabs Hack X Stripe",
-    description:
-      "A Stripe-powered ElevenLabs experiment for adding deliberate pauses, pacing, and payment flow to generated voice experiences.",
-    href: "https://www.instagram.com/reel/DYmr8UeoC6-/?igsh=MWpobmZ5c21ucjE1dQ==",
-    tags: [],
-    visualStyle: {
-      backgroundImage: "url('/elevenlabs-stripe-cover.png')",
-      backgroundPosition: "center",
-    },
-  },
-  {
     title: "ElevenLabs Hack X Vercel",
     description:
       "A Gold-winning cinematic short built with v0, turning the ElevenLabs site into a launch film for its latest voice model.",
@@ -110,6 +99,28 @@ const experiments = [
     tags: [],
     visualStyle: {
       backgroundImage: "url('/elevenlabs-vercel-cover.jpg')",
+      backgroundPosition: "center",
+    },
+  },
+  {
+    title: "Queer Encounters",
+    description:
+      "A visual, audio, and photogrammetry project documenting queer spaces, encounters, and the people who make them feel alive.",
+    href: "https://www.instagram.com/reel/DZNFhtSxp8O/?igsh=Ym1zYzhhOHBnbG1v",
+    tags: [],
+    visualStyle: {
+      backgroundImage: "url('/queer-encounters-channoc.jpg')",
+      backgroundPosition: "50% 32%",
+    },
+  },
+  {
+    title: "ElevenLabs Hack X Stripe",
+    description:
+      "A Stripe-powered ElevenLabs experiment for adding deliberate pauses, pacing, and payment flow to generated voice experiences.",
+    href: "https://www.instagram.com/reel/DYmr8UeoC6-/?igsh=MWpobmZ5c21ucjE1dQ==",
+    tags: [],
+    visualStyle: {
+      backgroundImage: "url('/elevenlabs-stripe-cover.png')",
       backgroundPosition: "center",
     },
   },
@@ -122,17 +133,6 @@ const experiments = [
     visualStyle: {
       backgroundImage: "url('/elevenlabs-voice-engine-earflips.png')",
       backgroundPosition: "center",
-    },
-  },
-  {
-    title: "Queer Encounters",
-    description:
-      "A visual and audio storytelling project documenting queer spaces, encounters, and the people who make them feel alive.",
-    href: "https://www.instagram.com/reel/DZNFhtSxp8O/?igsh=Ym1zYzhhOHBnbG1v",
-    tags: [],
-    visualStyle: {
-      backgroundImage: "url('/queer-encounters-channoc.jpg')",
-      backgroundPosition: "50% 32%",
     },
   },
   {
@@ -243,14 +243,6 @@ export default function Home() {
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <AudioGuidePlayButton />
-            <a
-              className={buttonVariants({ variant: "outline" })}
-              href="/CV"
-              rel="noreferrer"
-              target="_blank"
-            >
-              CV
-            </a>
             <a
               aria-label="Email"
               className={buttonVariants({ variant: "outline", size: "icon" })}

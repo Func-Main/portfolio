@@ -46,6 +46,11 @@ ACCENTURE_CONTACT = [
         None,
     ),
 ]
+LUMA_CONTACT = [
+    ("danmorgz@googlemail.com", "mailto:danmorgz@googlemail.com"),
+    ("danmorgan.vercel.app", "https://danmorgan.vercel.app"),
+    ("UK passport holder, currently relocating to London", None),
+]
 
 SECTIONS = [
     (
@@ -357,6 +362,81 @@ OPENAI_SECTIONS = [
                 "Spanish, padel, water polo, music, podcasting, photography, and queer community projects.",
             ),
         ],
+    ),
+]
+
+LUMA_SECTIONS = [
+    (
+        "SUMMARY",
+        [
+            (
+                "p",
+                "Creative technologist, filmmaker, founder, and engineer with 15+ years of experience across digital products, music videos, commercials, and global brands. My work combines creative production, product design, software engineering, and hands-on experimentation with emerging technology. I enjoy taking ideas from an early concept through to something tangible and useful.",
+            ),
+        ],
+    ),
+    (
+        "SKILLS",
+        [
+            (
+                "p",
+                "Creative technology, product design, rapid prototyping, full-stack product engineering, iOS development, generative AI workflows, video and audio production, AI APIs, Remotion and code-driven video, customer discovery, brand collaboration, and technical documentation.",
+            ),
+        ],
+    ),
+    (
+        "EXPERIENCE",
+        [
+            ("job", "Func Main, Founder, Creative Technology & Product - June 2016 - Present"),
+            (
+                "p",
+                "Independent studio where I turn product and creative ideas into working applications, prototypes, media, and production workflows. I lead the full process from brief and concept through hands-on design, engineering, content production, launch, and iteration.",
+            ),
+            (
+                "bullet",
+                "Remotion Video Creator - Next.js and Remotion editor for prompting, composing, and rendering videos directly from code.",
+            ),
+            (
+                "bullet",
+                "ElevenLabs Hacks - Competed in three hack events, building rapid voice and agentic media prototypes, and won Gold in the Vercel challenge.",
+            ),
+            (
+                "bullet",
+                "BlaBlaAHA! - AI-native audio product with a repeatable workflow for rapidly creating, reviewing, and shipping lesson content.",
+            ),
+            (
+                "bullet",
+                "Bend.com - AI, social, and backend feature work for one of the world's most popular stretching apps.",
+            ),
+            ("job", "Pentland Brands, Creative Technologist - March 2018 - September 2019"),
+            (
+                "p",
+                "Worked inside the Innovation Team to rapidly design and build web and mobile prototypes for global brands including Lacoste, Speedo, and Berghaus, translating strategic and commercial opportunities into tangible experiments for stakeholders to experience and evaluate.",
+            ),
+            ("job", "Pulse Films, Video Director - 2006 - 2012"),
+            (
+                "p",
+                "Directed more than 15 music videos and commercials across concepts, treatments, pitches, production, VFX, post-production, agencies, labels, artists, and crews. Conceived and directed a viral campaign that won a Cannes Lions Gold Lion.",
+            ),
+            ("job", "Active in Time Ltd, Founder & Product - July 2012 - Present"),
+            (
+                "p",
+                "Founded a technology company that grew from one person to five full-time employees. Built and operated a profitable SaaS platform, and led the product partnership that relaunched Splashpath globally as Speedo Fit through an exclusive four-year partnership with Speedo.",
+            ),
+            ("job", "Beeline, Mobile Product Design & Development - May 2016 - January 2017"),
+            (
+                "p",
+                "Worked directly with the founders to plan, prototype, design, and build the first version of the Beeline app after a successful Kickstarter campaign.",
+            ),
+        ],
+    ),
+    (
+        "EDUCATION",
+        [("p", "Bournemouth University - Bachelor's Degree, TV Production, 2003 - 2006. Grade: 1st.")],
+    ),
+    (
+        "INTERESTS",
+        [("p", "Spanish, padel, water polo, music, podcasting, photography, and queer community projects.")],
     ),
 ]
 
@@ -850,6 +930,7 @@ def main() -> None:
         (Path("public/daniel-morgan-cv-genie.pdf"), GENIE_CONTACT, GENIE_SECTIONS),
         (Path("public/daniel-morgan-cv-attio.pdf"), ATTIO_CONTACT, ATTIO_SECTIONS),
         (Path("public/daniel-morgan-cv-accenture.pdf"), ACCENTURE_CONTACT, ACCENTURE_SECTIONS),
+        (Path("public/daniel-morgan-cv-luma.pdf"), LUMA_CONTACT, LUMA_SECTIONS),
         (Path("daniel-morgan-cv-private.pdf"), PRIVATE_CONTACT, SECTIONS),
     ]
     for path, contact, sections in outputs:
@@ -892,6 +973,11 @@ def main() -> None:
     assert_contains(
         Path("public/daniel-morgan-cv-accenture.pdf"),
         "ElevenLabs workflows",
+        "+447894998333",
+    )
+    assert_contains(
+        Path("public/daniel-morgan-cv-luma.pdf"),
+        "Creative technologist",
         "+447894998333",
     )
 
