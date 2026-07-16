@@ -91,7 +91,7 @@ def main() -> None:
         Paragraph(
             "For the past five years, I've had a slightly unhealthy obsession with 3D scanning, particularly photogrammetry and Gaussian splatting. My project "
             f'<link href="https://www.instagram.com/reel/DZNFhtSxp8O/?igsh=Ym1zYzhhOHBnbG1v" color="{LINK.hexval()}"><u>Queer Encounters</u></link>'
-            " explores its potential as a documentary medium by pairing captured spaces and people with audio interviews.",
+            " explores its potential as a documentary medium by pairing captured spaces and people with audio interviews. I've also built my own React and Remotion pipelines for generating audiograms and image slideshows for the project.",
             body,
         ),
         Paragraph(
@@ -100,7 +100,7 @@ def main() -> None:
             body,
         ),
         Paragraph(
-            "This role feels like a rare opportunity to bring the creative and technical sides of my career together. I'd love to explore what Luma's models can make possible and turn those discoveries into thoughtful, memorable creative work.",
+            "This feels like a genuinely good fit for me. I'd love to talk.",
             body,
         ),
         Spacer(1, 7),

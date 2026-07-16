@@ -51,6 +51,11 @@ LUMA_CONTACT = [
     ("danmorgan.vercel.app", "https://danmorgan.vercel.app"),
     ("UK passport holder, currently relocating to London", None),
 ]
+FE_FUNDINFO_CONTACT = [
+    ("danmorgz@googlemail.com", "mailto:danmorgz@googlemail.com"),
+    ("danmorgan.vercel.app", "https://danmorgan.vercel.app"),
+    ("UK passport holder, currently relocating to London", None),
+]
 
 SECTIONS = [
     (
@@ -362,6 +367,85 @@ OPENAI_SECTIONS = [
                 "Spanish, padel, water polo, music, podcasting, photography, and queer community projects.",
             ),
         ],
+    ),
+]
+
+FE_FUNDINFO_SECTIONS = [
+    (
+        "SUMMARY",
+        [
+            (
+                "p",
+                "Founder and product engineer with 15+ years building products from early ideas through to launch. I have founded companies, built apps and SaaS products, worked with startups and global brands, and remained hands-on with design and engineering throughout. More recently I have been using AI-assisted development to build my own products and experiments.",
+            ),
+        ],
+    ),
+    (
+        "SKILLS",
+        [
+            (
+                "p",
+                "Product design, full-stack development, iOS development, Elixir and Phoenix, JavaScript and TypeScript, APIs and databases, customer research, rapid prototyping, product strategy, AI-assisted development, technical design, and client communication.",
+            ),
+        ],
+    ),
+    (
+        "EXPERIENCE",
+        [
+            ("job", "Func Main, Founder, Tech & Product - June 2016 - Present"),
+            (
+                "p",
+                "Independent product studio where I design, build, and ship my own products alongside selected client work. My role spans customer research, product design, technical architecture, hands-on implementation, launch, and iteration.",
+            ),
+            (
+                "bullet",
+                "BlaBlaAHA! - AI-native language app designed, built, and launched from scratch, with custom workflows for rapidly producing and reviewing content.",
+            ),
+            (
+                "bullet",
+                "Bend.com - AI, social, and backend feature work for one of the world's most popular stretching apps.",
+            ),
+            (
+                "bullet",
+                "ElevenLabs Hacks - Three rapid prototype builds using voice, generative media, agents, and web technologies; won Gold in the Vercel challenge.",
+            ),
+            (
+                "bullet",
+                "Remotion Video Creator - Next.js tool for prompting, composing, and rendering videos directly from code.",
+            ),
+            (
+                "bullet",
+                "Photo to Playlist - Agent workflow that reads a flyer or festival poster and turns it into a playlist.",
+            ),
+            ("job", "Active in Time Ltd, Founder & Product - July 2012 - Present"),
+            (
+                "p",
+                "Founded a health and leisure technology company that grew from one person to five full-time employees. Built and operated a profitable SaaS platform for UK leisure operators, and led the product partnership that relaunched Splashpath globally as Speedo Fit through an exclusive four-year agreement with Speedo.",
+            ),
+            ("job", "Wilde, Chief Executive Officer - September 2019 - December 2020"),
+            (
+                "p",
+                "Secured investment from Founders Factory and assembled the team to launch a new queer travel product, leading discovery, product strategy, hiring, partnerships, and investor communication until COVID stopped travel.",
+            ),
+            ("job", "Pentland Brands, Creative Technologist - March 2018 - September 2019"),
+            (
+                "p",
+                "Worked inside the Innovation Team to rapidly design and build web and mobile prototypes for global brands including Lacoste, Speedo, and Berghaus, turning early strategic opportunities into tangible experiments.",
+            ),
+            ("job", "Beeline, Mobile Product Design & Development - May 2016 - January 2017"),
+            (
+                "p",
+                "Worked directly with the founders to plan, prototype, design, and build the first version of the Beeline app after a successful Kickstarter campaign.",
+            ),
+        ],
+    ),
+    (
+        "EDUCATION",
+        [("p", "Bournemouth University - Bachelor's Degree, TV Production, 2003 - 2006. Grade: 1st.")],
+    ),
+    (
+        "INTERESTS",
+        [("p", "Spanish, padel, water polo, music, podcasting, photography, and queer community projects.")],
     ),
 ]
 
@@ -931,6 +1015,11 @@ def main() -> None:
         (Path("public/daniel-morgan-cv-attio.pdf"), ATTIO_CONTACT, ATTIO_SECTIONS),
         (Path("public/daniel-morgan-cv-accenture.pdf"), ACCENTURE_CONTACT, ACCENTURE_SECTIONS),
         (Path("public/daniel-morgan-cv-luma.pdf"), LUMA_CONTACT, LUMA_SECTIONS),
+        (
+            Path("public/daniel-morgan-cv-fe-fundinfo.pdf"),
+            FE_FUNDINFO_CONTACT,
+            FE_FUNDINFO_SECTIONS,
+        ),
         (Path("daniel-morgan-cv-private.pdf"), PRIVATE_CONTACT, SECTIONS),
     ]
     for path, contact, sections in outputs:
@@ -978,6 +1067,11 @@ def main() -> None:
     assert_contains(
         Path("public/daniel-morgan-cv-luma.pdf"),
         "Creative technologist",
+        "+447894998333",
+    )
+    assert_contains(
+        Path("public/daniel-morgan-cv-fe-fundinfo.pdf"),
+        "Founder and product engineer",
         "+447894998333",
     )
 

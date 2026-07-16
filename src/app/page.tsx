@@ -103,17 +103,6 @@ const experiments = [
     },
   },
   {
-    title: "Queer Encounters",
-    description:
-      "A visual, audio, and photogrammetry project documenting queer spaces, encounters, and the people who make them feel alive.",
-    href: "https://www.instagram.com/reel/DZNFhtSxp8O/?igsh=Ym1zYzhhOHBnbG1v",
-    tags: [],
-    visualStyle: {
-      backgroundImage: "url('/queer-encounters-channoc.jpg')",
-      backgroundPosition: "50% 32%",
-    },
-  },
-  {
     title: "ElevenLabs Hack X Stripe",
     description:
       "A Stripe-powered ElevenLabs experiment for adding deliberate pauses, pacing, and payment flow to generated voice experiences.",
@@ -133,6 +122,17 @@ const experiments = [
     visualStyle: {
       backgroundImage: "url('/elevenlabs-voice-engine-earflips.png')",
       backgroundPosition: "center",
+    },
+  },
+  {
+    title: "Queer Encounters",
+    description:
+      "A visual, audio, and photogrammetry project documenting queer spaces, encounters, and the people who make them feel alive.",
+    href: "https://www.instagram.com/reel/DZNFhtSxp8O/?igsh=Ym1zYzhhOHBnbG1v",
+    tags: [],
+    visualStyle: {
+      backgroundImage: "url('/queer-encounters-channoc.jpg')",
+      backgroundPosition: "50% 32%",
     },
   },
   {
